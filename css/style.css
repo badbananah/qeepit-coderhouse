@@ -10,6 +10,8 @@ html {
     scroll-behavior: smooth;
   }
 
+
+
 .container__grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -26,12 +28,15 @@ html {
     --black-color: #212121;
 }
 
+nav {
+    background-color: var(--main-bg-color);
+}
 body {
     font-family: Poppins, sans-serif;
 
 }
 /* HEADER */
-
+/*
 header {
     display: grid;
     background: rgb(227,77,77);
@@ -43,6 +48,7 @@ header {
     color: white;
     padding: 2%;
 }
+*/
 
 nav li {
     list-style-type: none;
@@ -226,19 +232,11 @@ article p {
 
 .waitlist {
     height: 100vh;
-}
-form {
-    background-image: url(../Assets/Images/Waitlist2.png);
+    background-image: url(../Img/Waitlist2.png);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    text-align: center;
-    padding: 4%;
 }
-.waitlist__text {
-    padding: 3%;
 
-}
 
 input[type=submit] {
     background-color: var(--main-bg-color);

@@ -7,10 +7,12 @@
     <title>Qeepit - Aviso legal</title>
     <link rel="icon" type="image/x-icon" href="./Qeepit/Images/Favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo--white""><img src="../Assets/Images/Qeepit logo.svg" alt="Qeepit logo"  alt="Logo" id="top" class="logo--white"></a>
+    <!--
+<header>
+        <a href="index.html" class="logo--white""><img src="./Img/Qeepit logo.svg" alt="Qeepit logo"  alt="Logo" id="top" class="logo--white"></a>
         <nav>
         <ul class="navbar">
             <li><a href="index.html#beneficios" class="nav__link">Beneficios</a></li>
@@ -24,7 +26,33 @@
         <section class="hero">
             <h3 class="section--title">Términos y condicioness</h3>
         </section>
-        <section class="terms-section">
+    -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ">
+          <a class="r-branavband" href="index.html" id="top"><img src="./Img/Qeepit logo.svg" alt="Logo" width="50%"></a>
+          <button class="navbar-toggler color-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-6 mb-lg-0 mx-auto d-sm-flex d-block flex-sm-nowrap">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="beneficios" href="#beneficios">Beneficios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#funcionamiento">Funcionamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn bg-light border-0 text-black" href="#waitlist">Waitlist 🥁</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      <section class="hero" id="main-hero">
+        <h3>Términos y condiciones</h3>
+    </section>
+    
+        <section class="terms-section container-lg">
             <p>Estas Condiciones de Servicio (a partir de ahora "Condiciones") regulan el acceso y uso del sitio web de Qeepit en <a href="https://qeepit.app" class="enlace">qeepit.app</a>, los productos y los servicios (a partir de ahora "Servicios"). Por favor, lee atentamente estas Condiciones y, si tienes alguna duda, ponte en contacto con nosotros en <a href="mailto:legal@qeepit.app?Subject=Legal" class="enlace">legal@qeepit.app</a><br>
             Al acceder o utilizar nuestros Servicios, aceptas estas Condiciones y nuestra Política de Privacidad, así como todas las leyes y normativas aplicables, y aceptas que eres responsable del cumplimiento de cualquier ley local aplicable. Si no estás de acuerdo con cualquiera de estos Términos, queda prohibido acceder y utilizar nuestra plataforma.<br>
             Tanto los materiales contenidos en nuestro sitio web como los productos y los servicios de Qeepit están protegidos por la legislación aplicable en materia de derechos de autor y marcas comerciales.
@@ -179,12 +207,12 @@
         <footer>
             <div class="footer container">
             <div class="footer-logo">
-                <a href="#top"><img src="../Assets/Images/Qeepit logo V.svg" alt="logo" width="3rem" class="footer-logo-white"></a>
+                <a href="#top"><img src="./Img/Qeepit logo V.svg" alt="logo" width="3rem" class="footer-logo-white"></a>
                 <h5 id="text-footer">Proudly made in Madrid for shopaholics ♥️</h5>
             </div>
             <div class="rrss"">
-                <a href="https://twitter.com/qeepit" target="_blank"><img src="../Assets/Images/RRSS-Twitter.svg" alt="twitter" width="50px" class="social-media"></a>
-                <a href="https://instagram.com/qeepit" target="_blank"><img src="../Assets/Images/RRSS-Instagram.svg" alt="instagram" width="50px" class="social-media"></a>
+                <a href="https://twitter.com/qeepit" target="_blank"><img src="./Img/RRSS-Twitter.svg" alt="twitter" width="50px" class="social-media"></a>
+                <a href="https://instagram.com/qeepit" target="_blank"><img src="./Img/RRSS-Instagram.svg" alt="instagram" width="50px" class="social-media"></a>
             </div>
             <div class="footer-links">
             <a href="./PoliticaPrivacidad.html" class="footer-link">Política de privacidad</a>
@@ -195,4 +223,6 @@
             </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
     </html>
