@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -31,12 +32,12 @@
     </div>
 -->
 <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid ">
-      <a class="r-branavband" href="index.html"><img src="./Img/Qeepit logo.svg" alt="Logo" width="50%"></a>
-      <button class="navbar-toggler color-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <div class="container-fluid">
+      <a class="r-branavband col-lg-6 text-center" href="index.html"><img src="./Img/Qeepit logo.svg" alt="Logo" width="150px"></a>
+      <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="collapse navbar-collapse col-lg-6 col-xs-1" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-6 mb-lg-0 mx-auto d-sm-flex d-block flex-sm-nowrap">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="beneficios" href="#beneficios">Beneficios</a>
@@ -45,14 +46,14 @@
             <a class="nav-link active text-white" href="#funcionamiento">Funcionamiento</a>
           </li>
           <li class="nav-item">
-            <a class="btn bg-light border-0 text-black" href="#waitlist">Waitlist 🥁</a>
+            <a class="btn nav__button--white border-0 text-black bg-light border-0 text-black" href="#waitlist">Waitlist 🥁</a>
           </li>
       </div>
     </div>
   </nav>
   <section class="hero" id="main-hero">
-    <h1>Sigue tus productos favoritos de internet,<br>descubre qué siguen otros usuarios<br>y compra cuando baje el precio de tus artículos</h1>
-    <img src="./Img/Qeepit_collage.png" alt="cards" class="hero-image">
+    <h1 class="container-md">Sigue tus productos favoritos de internet,<br>descubre qué siguen otros usuarios<br>y compra cuando baje el precio de tus artículos</h1>
+    <img src="./Img/Qeepit_collage.png" alt="cards" class="hero-image animate__animated animate__fadeInUp">
 </section>
     <main>
     <!--BENEFICIOS-->
@@ -132,8 +133,8 @@
      <!--WAITLIST-->
         <section aria-label="Waitlist" id="waitlist" class="waitlist waitlist--container">
             <div class="px-1 py-5 text-center">
-                <h3 class="display-5 fw-bold">¿Te avisamos cuando estemos listos?</h3>
-                <div class="col-lg-6 mx-auto">
+                <h3>¿Te avisamos cuando estemos listos?</h3>
+                <div class="col-lg-5 mx-auto">
                   <p class="lead mb-4">No te pierdas nada, déjanos tu correo y sé uno de los primeros usuarios de nuestra plataforma, <strong>it’s free!</strong></p>
                   <div class="justify-content-sm-center">
                     
