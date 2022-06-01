@@ -1,0 +1,21 @@
+{
+  "name": "qeepit",
+  "version": "1.0.0",
+  "description": "Landing page para la app Qeepit de seguimiento de precios",
+  "main": "/Volumes/SHACKETLON/CODERHOUSE/Desarrollo web/Desafios/Qeepit + Berenguer/Root/scss",
+  "scripts": {
+    "test": "ls",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badbananah/qeepit-coderhouse.git"
+  },
+  "author": "Clara Berenguer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badbananah/qeepit-coderhouse/issues"
+  },
+  "homepage": "https://github.com/badbananah/qeepit-coderhouse#readme"
+}

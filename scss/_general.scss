@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;
+
+}
+
+.container__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"header"
+                        "main" 
+                        "footer";
+    grid-template-areas:auto;
+    width: 100%;
+}
