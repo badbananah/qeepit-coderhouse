@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La comunidad de rebajas que te avisa cuando tus productos favoritos bajan de precio"/>
+    <meta name="keywords" content="seguir precios, seguir productos, rebajas, añadir favoritos, alertas de rebajas, alertas de precio"/>
     <title>Qeepit</title>
     <link rel="icon" type="image/x-icon" href="./Qeepit/Images/Favicon.ico">
-    <link rel="stylesheet" href="./css/style.css"
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./scss/style.scss">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -17,25 +17,10 @@
 </head>
 <body>
 
-<!-- OLD
-    <div class="container__grid">
-    <header>
-            <a href="index.html" class="logo--white""><img src="./Img/Qeepit logo.svg" alt="Qeepit logo"  alt="Logo" id="top" class="logo--white"></a>
-            <nav>
-            <ul class="navbar">
-                <li><a href="#beneficios" class="nav__link">Beneficios</a></li>
-                <li><a href="#funcionamiento" class="nav__link">Funcionamiento</a></li>
-                <li><a href="#enterprise" class="nav__link">Enterprise</a></li>
-            </ul>
-            </nav>
-            <button class="nav__button--white">Waitlist 🥁</button>
-    </header>
-   
-    </div>
--->
+<header>
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="r-branavband col-lg-6 text-center" href="index.html"><img src="./Img/Qeepit logo.svg" alt="Logo" width="150px"></a>
+      <a class="r-branavband col-lg-6 text-center" href="index.html"><img src="./Img/Qeepit logo.svg" alt="Qeepit" width="150px"></a>
       <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon navbar-light"></span>
       </button>
@@ -53,10 +38,12 @@
       </div>
     </div>
   </nav>
-  <section class="hero" id="main-hero">
-    <h1 class="container-md">Sigue tus productos favoritos de internet,<br>descubre qué siguen otros usuarios<br>y compra cuando baje el precio de tus artículos</h1>
-    <img srcset="Img/Qeepit_collage.png 1024w, Img/Qeepit_collage2.png 768w, Img/Qeepit_collage3.png 576w" alt="cards" class="hero-image animate__animated animate__fadeInUp">
+
+  <section class="hero container-fluid" id="main-hero">
+    <h1 class="container-sm">Sigue tus productos favoritos de internet, descubre qué siguen otros usuarios y compra cuando baje el precio de tus artículos</h1>
+    <img srcset="./Img/Qeepit_collage.png 1024w, ./Img/Qeepit_collage2.png 768w, ./Img/Qeepit_collage3.png 576w" alt="cards" class="hero-image animate__animated animate__fadeInUp">
 </section>
+</header>
 
     <main>
     <!--BENEFICIOS-->
@@ -97,7 +84,7 @@
                     <img class="card-image-func" src="./Img/Funcion1.png" alt="AltaUsuario">
                 </div>
                 <div class="card-text">
-                  <h3>Regístrate y podrás seguir tus items favoritos gratis</h3>
+                  <h4>Regístrate y podrás seguir tus items favoritos gratis</h4>
                 </div>
             </div>
             <div class="Funcionamiento__container">
@@ -105,7 +92,7 @@
                     <img class="card-image-func" src="./Img/Funcion2.png" alt="Novedades">
                 </div>
                 <div class="card-text">
-                  <h3>Descubre cada semana los productos más populares de tu interés</h3>
+                  <h4>Descubre cada semana los productos más populares de tu interés</h4>
                 </div>
             </div>
             <div class="Funcionamiento__container">
@@ -113,7 +100,7 @@
                     <img class="card-image-func" src="./Img/Funcion3.png" alt="Colecciones">
                 </div>
                 <div class="card-text">
-                  <h3>Ten todos tus favoritos bajo control con el sistema de colecciones</h3>
+                  <h4>Ten todos tus favoritos bajo control con el sistema de colecciones</h4>
                 </div>
             </div>
             </div>
@@ -123,7 +110,7 @@
     <!--ENTERPRISE-->
         <section aria-label="Enterprise" id="enterprise" class="enterprise">
             <article class="enterprise__text">
-                <h3>Juntos podemos ser un gran equipo</h3>
+                <h2>Juntos podemos ser un gran equipo</h2>
                 <p>Qeepit es un servicio emergente en el que hay cabida para marcas de todos los tamaños. Si quieres que los productos de tu tienda online aparezcan en la plataforma, queremos conocerte. 
                 <div><a href="mailto:hola@qeepit.app?Subject=Qeepit%20Enterprise" class="enterprise__btn">Saber más</a></div>
             </article>
@@ -136,7 +123,7 @@
      <!--WAITLIST-->
         <section aria-label="Waitlist" id="waitlist" class="waitlist waitlist--container">
             <div class="px-1 py-5 text-center">
-                <h3>¿Te avisamos cuando estemos listos?</h3>
+                <h2>¿Te avisamos cuando estemos listos?</h2>
                 <div class="col-lg-5 mx-auto">
                   <p class="lead mb-4">No te pierdas nada, déjanos tu correo y sé uno de los primeros usuarios de nuestra plataforma, <strong>it’s free!</strong></p>
                   <div class="justify-content-sm-center">

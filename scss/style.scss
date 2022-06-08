@@ -1,19 +1,53 @@
+* {
+	font-family: Poppins, sans-serif;
+	margin: 0;
+}
 /* VARIABLES */
+
 $red: #E8676A;
 $lightRed: #F58D90;
 $lightGrey: #ebebeb;
-$dark: #212121;
+$dark: #212121; 
 
-/* IMPORT */
-@import "_general.scss";
+/* MAP + MIXIN */
+
+$p-font-sizes: (
+  null  : 1rem,
+  480px : 1.1rem,
+  640px : 1.2rem,
+);
+
+@mixin font-size($fs-map) {
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+	  @if $fs-breakpoint == null {
+		font-size: $fs-font-size;
+	  }
+	  @else {
+		@media screen and (min-width: $fs-breakpoint) {
+		  font-size: $fs-font-size;}
+	 		 }
+		}
+  	}
+  
+  p {
+	@include font-size($p-font-sizes);
+  }
 
 
 /* HEADER */
-.navbar {
-	background: linear-gradient(180deg, rgba(227,77,77,1) 0%, #E8676A, 100%);
-	padding-top: 3%;
-	padding-top: 2% !important;
+header {
+	background: $red;
+	background: linear-gradient(180deg, rgba(227,77,77,1) 0%, rgba(232,103,106,1) 100%);
+	margin: 0;
+	width: 100%;
+	h1 {
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		text-align: center;
+		width: 90%;
+	}
 }
+	
 nav {
 	li {
 		list-style-type: none;
@@ -52,17 +86,9 @@ a.logo--white {
 		color: $dark;
 	}
 }
-header {
-	h1 {
-		padding-top: 5vh;
-		padding-bottom: 5vh;
-		text-align: center;
-		width: 90%;
-	}
-}
+
 
 .hero {
-	background-color: $dark;
 	border: none;
 	color: white;
 	text-align: center;
@@ -70,6 +96,7 @@ header {
 	font-size: 1.8rem;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 .hero-image {
 	width: 100%;
@@ -77,7 +104,7 @@ header {
 
 
 .beneficios {
-	background-color: $dark;
+	background-color: $lightGrey;
 	text-align: center;
 	width: 100%;
 }
@@ -148,12 +175,19 @@ article {
 	justify-content: center;
 	align-items: center;
 }
-.enterprise__text {
-	text-align: center;
-}
+
+/* EXTEND */
+
 .enterprise__img {
 	text-align: center;
 }
+
+.enterprise__text {
+	@extend .enterprise__img;
+	width: 80%;
+}
+
+
 .enterprise__pic {
 	border-radius: 10px;
 	width: 50%;
