@@ -47,8 +47,10 @@ header {
 		width: 90%;
 	}
 }
+
 	
 nav {
+	padding: 2% !important;
 	li {
 		list-style-type: none;
 		text-decoration: none;
@@ -100,6 +102,7 @@ a.logo--white {
 }
 .hero-image {
 	width: 100%;
+	padding: 0 !important;
 }
 
 
@@ -134,13 +137,7 @@ article {
 	margin-right: 10%;
 	margin-top: 5%;
 }
-.img-bordes-redondeados--dcha {
-	border-radius: 10px;
-	width: 35%;
-	margin: 2% 2% 2% 2%;
-}
-.img-bordes-redondeados--izq {
-	border-radius: 10px;
+.img-bordes-redondeados--dcha .img-bordes-redondeados--izq {
 	width: 35%;
 	margin: 2% 2% 2% 2%;
 }
@@ -189,7 +186,6 @@ article {
 
 
 .enterprise__pic {
-	border-radius: 10px;
 	width: 50%;
 	position: relative;
 	margin: 10%;
@@ -380,7 +376,6 @@ a.footer-link {
 		font-size: 1rem;
 		font-family: poppins;
 		color: white;
-		padding: 2%;
 	}
 	a.logo--white {
 		width: 40%;
@@ -442,7 +437,6 @@ a.footer-link {
 		font-size: 1rem;
 		font-family: poppins;
 		color: white;
-		padding: 2%;
 	}
 	a.logo--white {
 		width: 50%;
@@ -461,6 +455,7 @@ a.footer-link {
 	.img-bordes-redondeados--dcha {
 		width: 70%;
 		padding: 3%;
+		border-radius: 10px;
 	}
 	.article__beneficio {
 		flex-direction: column;

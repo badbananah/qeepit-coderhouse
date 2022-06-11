@@ -25,9 +25,11 @@ header {
     text-align: center;
     width: 90%; }
 
-nav li {
-  list-style-type: none;
-  text-decoration: none; }
+nav {
+  padding: 2% !important; }
+  nav li {
+    list-style-type: none;
+    text-decoration: none; }
 
 a.nav__link {
   color: white;
@@ -66,7 +68,8 @@ a.logo--white {
   width: 100%; }
 
 .hero-image {
-  width: 100%; }
+  width: 100%;
+  padding: 0 !important; }
 
 .beneficios {
   background-color: #ebebeb;
@@ -97,13 +100,7 @@ article p {
   margin-right: 10%;
   margin-top: 5%; }
 
-.img-bordes-redondeados--dcha {
-  border-radius: 10px;
-  width: 35%;
-  margin: 2% 2% 2% 2%; }
-
-.img-bordes-redondeados--izq {
-  border-radius: 10px;
+.img-bordes-redondeados--dcha .img-bordes-redondeados--izq {
   width: 35%;
   margin: 2% 2% 2% 2%; }
 
@@ -145,7 +142,6 @@ article p {
   width: 80%; }
 
 .enterprise__pic {
-  border-radius: 10px;
   width: 50%;
   position: relative;
   margin: 10%; }
@@ -325,8 +321,7 @@ a.footer-link {
     align-items: center;
     font-size: 1rem;
     font-family: poppins;
-    color: white;
-    padding: 2%; }
+    color: white; }
   a.logo--white {
     width: 40%; }
   .hero-image {
@@ -372,8 +367,7 @@ a.footer-link {
     align-items: center;
     font-size: 1rem;
     font-family: poppins;
-    color: white;
-    padding: 2%; }
+    color: white; }
   a.logo--white {
     width: 50%;
     padding: 2%; }
@@ -386,7 +380,8 @@ a.footer-link {
     display: none; }
   .img-bordes-redondeados--dcha {
     width: 70%;
-    padding: 3%; }
+    padding: 3%;
+    border-radius: 10px; }
   .article__beneficio {
     flex-direction: column;
     width: 90%; }
